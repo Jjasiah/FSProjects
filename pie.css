@@ -17,13 +17,13 @@ body {
 }
 
 h1, h2 {
-    font-family: "Lucia Sans Unicode", Helvetica, Arial, sans-serif;
-    background-color: #F0F0F0;
     color: #A4A400;
-    text-decoration: underline;
-    letter-spacing: 0.25em;
+    background-color: #F0F0F0;
     display: inline;
+    font-family: "Lucia Sans Unicode", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
     padding: 0 4px;
+    text-decoration: underline;
 }
 
 h1 {
