@@ -3,7 +3,7 @@ Jasiah Odell
 Full Stack Web Development, Fall 2025
 Project: Granny's Pies 
 Description: CSS to style pie.html 
-Extra Features: Silverware background, pie bullet points, 
+Extra Features: Silverware background, pie bullet points, wide headings, tight heading bakcgrounds
 */
 
 body {
@@ -22,6 +22,8 @@ h1, h2 {
     color: #A4A400;
     text-decoration: underline;
     letter-spacing: 0.25em;
+    display: inline;
+    padding: 0 4px;
 }
 
 h1 {
