@@ -5,3 +5,12 @@ Project: College Website
 Description: Recreation of the Edmonds College Website front page
 Extra Features: White header and footer areas 
 */
+
+:root {
+    --blue: #004D71;
+    --green: #B3EE31;
+    --grey-v1: #EEEEEE;
+    --grey-v2: #DDDDDD;
+    
+
+}
