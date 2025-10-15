@@ -15,7 +15,7 @@ Extra Features:
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Gotham:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="edmonds.css">
     </head>
-    <!-- Header -->
+    <!--------------------------- Header --------------------------->
     <body>
         <header class="page-header">
             <img 
@@ -26,13 +26,13 @@ Extra Features:
             height="auto"
             />
             <div class="header-rows">
-                <div class="header-boxes header-boxes--top">
+                <div class="header-items header-items--top">
                     <a class="box box--green" href="#">International Programs</a>
                     <a class="box box--grey" href="#">English</a>
                     <a class="box box--grey" href="#">Covid Updates</a>
                 </div>
 
-                <div class="header-boxes header-boxes--bottom">
+                <div class="header-items header-items--bottom">
                     <a class="pill" href="#">Calendar</a>
                     <a class="pill" href="#">Class schedule</a>
                     <a class="pill" href="#">apply</a>
@@ -43,7 +43,7 @@ Extra Features:
                 </div>
             </div>
         </header>
-        <!--Nav Bar-->
+        <!---------------------- Nav Bar --------------------------->
         <nav class="nav-bar" aria-label="Primary">
             <ul class="bar-items">
                 <li><a href="#">New? Start Here</a></li>
@@ -55,18 +55,32 @@ Extra Features:
             </ul>
         </nav>
 
+        <!------------------------- Main Content ------------------------->
         <main>
-            <img src="https://allisonobourn.com/images/2/banner.jpg" alt="photo of campus and new building">
-            <h1>Edmonds Empowers
-                <br>
-                Our Students & Community
-            </h1>
-            <p>Whether you want to earn a technical degree to enter the workforce, transfer to a four-year university or open a new chapter in your life, you can invent – or reinvent – your future at Edmonds College. Located on a 50-acre campus north of Seattle, Edmonds College will empower you with the skills, support and confidence for success.</p>
-            <ul>
-                <li>Discover Edmonds</li>
-                <li>Explore Your Options</li>
-                <li>Talk With An Advisor</li>
-            </ul>
+            <!-- College Hero -->
+            <img 
+            class="hero"
+            src="https://allisonobourn.com/images/2/banner.jpg" 
+            alt="photo of campus and Hazel Miller building"
+            />
+
+            <!-- Blue Box -->
+             <section class="blue-box" aria-labelledby="blue-box-title">
+                <h1>
+                    <span class="blue-box-title__line blue-box-title__line--L">Edmonds Empowers</span>
+                    <span class="blue-box-title__line blue-box-title__line--M">Our Students & Community</span>
+                </h1>
+
+                <p>
+                    Whether you want to earn a technical degree to enter the workforce, transfer to a four-year university or open a new chapter in your life, you can invent – or reinvent – your future at Edmonds College. Located on a 50-acre campus north of Seattle, Edmonds College will empower you with the skills, support and confidence for success.
+                </p>
+
+                <div class="button-row" role="group" aria-label="Primary Actions">
+                    <a class="button" href="#">Discover Edmonds</a>
+                    <a class="button" href="#">Explore Your Options</a>
+                    <a class="button" href="#">With An Advisor</a> 
+                </div>
+             </section>
 
             <img 
             class=""

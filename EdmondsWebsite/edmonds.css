@@ -79,7 +79,7 @@ a:focus {
     padding-top: 10px;
 }
 
-.header-boxes {
+.header-items {
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -97,7 +97,7 @@ a:focus {
 .box--green { background: var(--green); }
 .box--grey { background: var(--grey-v1); }
 
-.header-boxes--bottom .pill {
+.header-items--bottom .pill {
     border-radius: var(--pill-radius);
     display: inline-block;
     font-size: 0.95rem;
@@ -136,6 +136,69 @@ a:focus {
     padding: 0 20px;
     line-height: 50px;
 }
+
+/*--------------------------
+        Main Content
+--------------------------*/
+.blue-box {
+    background: var(--blue);
+    color: white;
+    margin: 200px auto 0;
+    padding: 40px 80px;
+    text-align: center;
+    width: 80%;
+
+}
+
+.blue-box-title {
+    letter-spacing: 0.025em;
+    margin: 0 0 16px 0;
+}
+
+.blue-box-title__line {
+    display: block;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+.blue-box-title__line-L { font-size: 48px; }
+.blue-box-title__line-M { font-size: 24px; }
+
+.blue-box p {
+    font-family: var(--para-font);
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 1.5em 0;
+}
+
+.botton-row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    background: var(--green);
+    border-radius: 90px;
+    color: var(--blue);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 15px;
+    padding: 15px 30px;
+
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*------------------------
+        Gray Pannel   
+-------------------------*/
+
 
 /*--------------------
         Footer   
