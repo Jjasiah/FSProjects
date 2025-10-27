@@ -43,8 +43,8 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
 
         randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    /*Main checking logic for the game, outputs the hints or answer to the previous
-    guesses area */
+    /*Main checking logic for the game, outputs the hints or answer to the 
+    previous guesses area, and ends the game when the number is guessed*/
     function checkGuess() {
         const guess = inputValidator("guess");
         const guesses = document.getElementById("guesses");
@@ -63,7 +63,8 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
         guesses.innerHTML = message + "<br />" + guesses.innerHTML;
     }
 
-    //Checks if the inputs given are numbers
+    /*Checks if the inputs given are numbers and returns a NaN and 
+    and alert if not */
     function inputValidator(id) {
         const input = document.getElementById(id).value.trim();
         const number = Number(input);
