@@ -2,7 +2,8 @@
 Jasiah Odell
 Full Stack Web Development, Fall 2025
 Project 3: Guess-a-number Game
-Description: A webpage that lets the user play a guess-a-number game. Using html to create a UI, css for styling, and js for functionality.
+Description: A webpage that lets the user play a guess-a-number game. 
+Using html to create a UI, css for styling, and js for functionality.
 */
 
 (function() {
@@ -24,7 +25,8 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
         document.getElementById("guess_button").disabled = true;
         document.getElementById("start_button").disabled = false;
     }
-    //Starts the game with the given values and unlocks the guess button if the values are valid
+    /*Starts the game with the given values and unlocks the guess button
+    if the values are valid */
     function startGame() {
         const min = inputValidator("min");
         const max = inputValidator("max");
