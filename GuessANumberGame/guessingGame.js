@@ -11,8 +11,8 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
     let randomNumber;
 
     window.onload = function () {
-        this.document.getElementById("start_button").onclick = startGame;
-        this.document.getElementById("guess_button").onclick = checkGuess;
+        document.getElementById("start_button").onclick = startGame;
+        document.getElementById("guess_button").onclick = checkGuess;
         setUI();
     };
 
@@ -32,7 +32,7 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
         document.getElementById("guesses").innerHTML = "";
 
         if (min > max){
-            alert("Make sure your minimum is smaller than your maximum number.");
+            alert("Please make your maximum larger than your minimum.");
             return;
         }
 
@@ -43,10 +43,11 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
 
         randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    //Main checking logic for the game, outputs the hints or answer to the previous guesses area
+    /*Main checking logic for the game, outputs the hints or answer to the previous
+    guesses area */
     function checkGuess() {
         const guess = inputValidator("guess");
-        const guesses = document.getElementById("guesses")
+        const guesses = document.getElementById("guesses");
         let message = "";
 
         if (guess === randomNumber){
@@ -56,13 +57,13 @@ Description: A webpage that lets the user play a guess-a-number game. Using html
         } else if (guess < randomNumber) {
             message = "It's higher than " + guess + "!";
         } else if (guess > randomNumber) {
-            message = "It's lower than " + guess + "!"
+            message = "It's lower than " + guess + "!";
         }
 
         guesses.innerHTML = message + "<br />" + guesses.innerHTML;
     }
 
-    //Checks if the inputs given are numbers 
+    //Checks if the inputs given are numbers
     function inputValidator(id) {
         const input = document.getElementById(id).value.trim();
         const number = Number(input);
