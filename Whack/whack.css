@@ -1,0 +1,7 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+  button.mole { outline: 3px solid orange; }
+  button.hovering { background-color: #eee; }
